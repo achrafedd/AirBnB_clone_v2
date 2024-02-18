@@ -4,8 +4,9 @@
 		<TITLE>HBNB</TITLE>
 	</HEAD>
 	<BODY>
+		{% set var = "even" if number % 2 == 0 else "odd" %}
 		<H1>
-			Number: {{number}} is {{ "even" if number % 2 == 0 else "odd" }}
+			Number: {{number}} is {{ var }}
 		</H1>
 	</BODY>
 </HTML>
